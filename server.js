@@ -25,6 +25,7 @@ app.use((req, res, next) => {
     next();
 });
 
+////maintenaince handler
 // app.use((req, res, next)  => {
 //     res.render('maintenance.hbs');
 // });
@@ -41,7 +42,7 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        welcomeMessage: 'Welcome to my Website',
+        welcomeMessage: 'Welcome to the Modern Software Factory!',
     });
 });
 
